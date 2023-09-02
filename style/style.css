@@ -1,0 +1,32 @@
+#cabecalho {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    color: #13274F;
+    text-align: right;
+}
+
+.subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #13274F;
+}
+
+.tema {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #13274F;
+    text-align: center;
+}
+
+.contato {
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 50px;
+    background-color:#ffffff;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    color:#13274F;
+    border-bottom-color: #13274F;
+    
+}
