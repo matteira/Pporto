@@ -3,7 +3,7 @@
     font-size: 64px;
     color: #f0bdcd;
     text-align: right;
-    text-shadow:  2px 0px 1px #999;
+    text-shadow: 2px 0px 1px #999;
 }
 
 #cabecalho {
@@ -28,7 +28,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     color: #f0bdcd;
-    text-shadow:  2px 0px 1px #999;
+    text-shadow: 2px 0px 1px #999;
 }
 
 .subtitulo {
@@ -55,7 +55,7 @@
     font-size: 30px;
     color: #f0bdcd;
     text-align: center;
-    text-shadow:  2px 0px 1px #999;
+    text-shadow: 2px 0px 1px #999;
 }
 
 .explore {
@@ -84,12 +84,65 @@ li a:hover {
 }
 
 
-.jardim {
-    max-width: 200px;
-    max-height: 150px;
-    width: auto;
-    height: auto;
+.slider {
+    display: block;
+    height: 700px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
 }
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    vertical-align: top;
+    position: static;
+    height: 700px;
+    width: 600px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
 
 .corpo {
     width: 1420px;
@@ -118,7 +171,7 @@ footer {
     padding: 10px 0;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
-    
+
 }
 
 /* Estilos para o link */
@@ -139,8 +192,11 @@ footer img {
     /* Espaçamento à esquerda do ícone */
 }
 
-@media screen and (max-width: 768px){
-    section, aside, h2{
+@media screen and (max-width: 768px) {
+
+    section,
+    aside,
+    h2 {
         width: 100%;
         padding: 0;
     }
@@ -149,6 +205,17 @@ footer img {
 @media screen and (max-width: 768px) {
     nav li {
         float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 350px;
+        width: 300px;
+    }
+    .slider img {
+        height: 350px;
+        width: 300px;
     }
 }
 
