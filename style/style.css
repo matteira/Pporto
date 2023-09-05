@@ -1,7 +1,7 @@
 #cabecalho {
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
-    color: #13274F;
+    color: #333;
     text-align: right;
 }
 
@@ -26,79 +26,107 @@
 .subtitulo {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    color: #13274F;
+    color: #333;
 }
+
+.subtitulo {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
 
 .tema {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: #13274F;
+    color: #333;
     text-align: center;
 }
 
-.contato {
+.explore {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     font-family: 'Poppins', sans-serif;
-    width: 100px;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-    color: #13274F;
-    border-bottom-color: #13274F;
-    background: white;
-    transition: background 1s;
-    margin-left: 40%;
-    margin-right: auto;
-
 }
 
-.contato:hover,
-.contato:focus {
-    background: #13274F;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
     color: white;
-}
-
-.jogos {
-    font-family: 'Poppins', sans-serif;
-    width: 100px;
-    height: 50px;
-    margin: auto;
     text-align: center;
-    border-radius: 10px;
-    color: #13274F;
-    border-bottom-color: #13274F;
-    background: white;
-    transition: background 1s;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.jogos:hover,
-.jogos:focus {
-    background: #13274F;
-    color: white;
+li a:hover {
+    background-color: #08ff5abd;
 }
 
-.sobre {
-    font-family: 'Poppins', sans-serif;
-    width: 100px;
-    height: 50px;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-    color: #13274F;
-    border-bottom-color: #13274F;
-    background: white;
-    transition: background 1s;
-}
 
-.sobre:hover,
-.sobre:focus {
-    background: #13274F;
-    color: white;
-}
-
-.jardim{
-    max-width:200px;
-    max-height:150px;
+.jardim {
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
+}
+
+.corpo {
+    width: 1820px;
+    border: 10px solid green;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 1%;
+    text-align: center;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilos CSS para o footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+/* Estilos para o link */
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Estilos para a imagem do ícone */
+footer img {
+    width: 24px;
+    /* Tamanho do ícone */
+    height: auto;
+    /* Mantém a proporção original */
+    vertical-align: middle;
+    /* Alinha verticalmente com o texto */
+    margin-left: 5px;
+    /* Espaçamento à esquerda do ícone */
 }
